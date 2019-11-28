@@ -1,0 +1,88 @@
+#ajaxloader3 {
+  margin: 0 auto;
+}
+.outer {
+  border: 5px solid rgba(0, 229, 183, 0.9);
+  opacity: .9;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 35px rgba(0, 76, 61, 0.9);
+  -moz-box-shadow: 0 0 35px rgba(0, 76, 61, 0.9);
+  box-shadow: 0 0 35px rgba(0, 76, 61, 0.9);
+  -webkit-animation: spin-pulse 1s linear infinite normal;
+  -moz-animation: spin-pulse 1s linear infinite normal;
+  -ms-animation: spin-pulse 1s linear infinite normal;
+  animation: spin-pulse 1s linear infinite normal;
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  animation-delay: 0;
+}
+.inner {
+  border: 5px solid rgba(0, 229, 183, 0.9);
+  opacity: .9;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 15px rgba(0, 76, 61, 0.9);
+  -moz-box-shadow: 0 0 15px rgba(0, 76, 61, 0.9);
+  box-shadow: 0 0 15px rgba(0, 76, 61, 0.9);
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: -50px;
+  margin: 0 auto;
+  -webkit-animation: spin-right 1s linear infinite normal;
+  -moz-animation: spin-right 1s linear infinite normal;
+  -ms-animation: spin-right 1s linear infinite normal;
+  animation: spin-right 1s linear infinite normal;
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  animation-delay: 0;
+}
+.loading{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, .5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+}
+@-webkit-keyframes spin-pulse {
+  from {
+    -webkit-transform: rotate(160deg);
+    opacity: 0;
+    box-shadow: 0 0 1px rgba(0, 61, 76, 0.9);
+  }
+  50% {
+    -webkit-transform: rotate(145deg);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: rotate(-320deg);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes spin-right {
+  from {
+    -webkit-transform: rotate(0deg);
+    opacity: 0.2;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    opacity: 1.0;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    opacity: 0.2;
+  }
+}

@@ -1,0 +1,9 @@
+<!--conpoments/loading.wxml-->
+<view class="loading" wx:if="{{isShow}}">
+  <view class="loading-inner">
+    <view id="ajaxloader3">
+      <view class="outer"></view>
+      <view class="inner"></view>
+    </view>
+  </view>
+</view>

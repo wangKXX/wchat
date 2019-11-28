@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/info/index",
+    "pages/yunshi/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "星座琅琊阁",
+    "navigationBarTextStyle": "black",
+    "onReachBottomDistance": 100
+  },
+  "sitemapLocation": "sitemap.json"
+}

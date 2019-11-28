@@ -1,0 +1,43 @@
+<!--pages/info/index.wxml-->
+<view class="info">
+  <view class="title">
+    <button open-type="share" plain="true" class="share">
+      <image src="../../images/fenxiang.png"></image>
+    </button>
+  </view>
+  <view class="icon">
+    <view class="image">
+      <image src="{{url}}"></image>
+    </view>
+    <text>{{name}}</text>
+  </view>
+  <view class="tab-card">
+    <view wx:for="{{ tabItem }}" class="{{index === active ? 'active' : ''}}" wx:key="{{ index }}" bindtap="handlerTap" data-index="{{index}}">
+      <view class="txt">{{ item.txt }}</view>
+      <view class="date">{{ item.date }}</view>
+    </view>
+  </view>
+  <view class="content-wrap">
+    <contentLoading isShow="{{isContentLoading}}"></contentLoading>
+    <view class="common-head">运势小贴士
+      <view class="before"></view>
+    </view>
+    <view class="tips">
+      <view class="show-title" wx:for="{{tips}}" wx:key="index">
+        <text>{{item.key}}：</text>
+        <text wx:if="{{index > 1}}">{{item.value}}</text>
+        <view wx:else class="star-wrap">
+          <icon class="iconfont icon-pingfenxingxing star {{index < item.star ? 'red' : ''}}" wx:for="{{5}}" wx:key="star{{index}}" wx:for-item="startItem"></icon>
+        </view>
+      </view>
+    </view>
+    <view class="common-head">今日运势
+      <view class="before"></view>
+    </view>
+    <view class="show-title card" wx:for="{{info}}" wx:key="index">
+      <view class="key">{{item.key}}</view>
+      <text>{{item.value}}</text>
+    </view>
+  </view>
+  <loading isShow="{{isShowLoading}}"></loading>
+</view>

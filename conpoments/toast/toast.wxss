@@ -1,0 +1,17 @@
+/* conpoments/toast.wxss */
+.toast{
+  font-size: 30rpx;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5rpx 18rpx;
+  border-radius: 8rpx;
+}
+.toast-wrap{
+  position: fixed;
+  top: 50rpx;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

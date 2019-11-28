@@ -1,0 +1,104 @@
+/* pages/info/index.wxss */
+.info{
+  width: 100%;
+  /* background-color: #240A4F; */
+  padding: 0 38rpx 48rpx 38rpx;
+  color: #fff;
+  box-sizing: border-box;
+}
+.show-title{
+  margin-bottom: 15rpx;
+  font-size: 30rpx;
+}
+.tips{
+  padding: 15px;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 15rpx;
+  background: rgba(255, 255, 255, 0.5);
+  margin-bottom: 38rpx;
+}
+.tips .show-title{
+  width: 50%;
+  flex: none;
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+}
+.star{
+  font-size: 30rpx;
+  margin-top: -20rpx;
+}
+.red{
+  color: #F703AE;
+}
+.title{
+  position: absolute;
+  top: 30rpx;
+  right: 30rpx;
+}
+.title text{
+  font-weight: 500;
+}
+.share{
+  width: 40rpx;
+  height: 40rpx;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  line-height: normal;
+  border: 0!important;
+}
+.share image{
+  width: 100%;
+  height: 100%;
+}
+.share::after{
+  border: 0;
+}
+.icon{
+  width: 406rpx;
+  padding: 40rpx 0 40rpx 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.icon .image{
+  width: 155rpx;
+  height: 155rpx;
+}
+.icon .image image{
+  width: 100%;
+  height: 100%;
+}
+.tab-card{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 24rpx;
+  color: #fff;
+  padding: 20px;
+}
+.active{
+  transform: scale(1.5);
+}
+.card{
+  background-color: #360C75 ;
+  border-radius: 20rpx;
+  opacity: 0.9;
+  font-size: 24rpx;
+  padding: 48rpx 33rpx;
+  margin-bottom: 38rpx;
+  line-height: 45rpx;
+  text-align: justify;
+}
+.card .key{
+  font-size: 30rpx;
+}
+.content-wrap{
+  position: relative;
+}

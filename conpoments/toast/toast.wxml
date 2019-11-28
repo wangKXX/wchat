@@ -1,0 +1,5 @@
+<view class="toast-wrap" wx:if="{{isShow}}">
+<view class="toast">
+{{showMesg}}
+</view>
+</view>

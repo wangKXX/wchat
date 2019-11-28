@@ -1,0 +1,9 @@
+<!--conpoments/contentloading/index.js.wxml-->
+<view class="content-loading" wx-if="{{isShow}}">
+  <view class="loading-inner">
+    <view id="ajaxloader3">
+      <view class="outer"></view>
+      <view class="inner"></view>
+    </view>
+  </view>
+</view>

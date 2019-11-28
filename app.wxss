@@ -1,0 +1,30 @@
+/**app.wxss**/
+@import "./font/iconfont.wxss";
+page{
+  background: #360C75;
+}
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+.common-head{
+  position: relative;
+  font-weight: bold;
+  width: fit-content;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 32rpx;
+  padding-left: 6px;
+}
+.common-head .before{
+  position: absolute;
+  bottom: 8rpx;
+  left: -5rpx;
+  width: 5rpx;
+  height: 24rpx;
+  background-color: #fff;
+
+}

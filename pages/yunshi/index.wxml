@@ -1,0 +1,27 @@
+<view class="main">
+  <view class="common-head">运势小贴士
+    <view class="before"></view>
+  </view>
+  <view class="content">
+    <view class="icon-wrap" wx:for="{{icons}}" wx:key="index" bindtap="goMainPage" data-type="{{item.type}}" data-name="{{item.name}}" data-src="{{item.url}}">
+      <view class="icon">
+        <image src="{{item.url}}"></image>
+      </view>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+  <view class="common-head">星座查询
+    <view class="before"></view>
+  </view>
+  <view class="picker">
+  请选择您的出生年月(公历)：
+  <picker mode="date" class="date" value="{{date}}" bindchange="bindDateChange">
+  <view class="picker picker-input">
+      {{date}}
+    </view>
+  </picker>
+  <view>您的星座是：
+  <text>{{astro}}</text>
+  </view>
+  </view>
+</view>

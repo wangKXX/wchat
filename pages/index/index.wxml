@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="inner">
+    <view class="avatar" wx:if="{{userInfo.avatarUrl}}">
+  <image src="{{userInfo.avatarUrl}}"></image>
+  </view>
+  <view class="text">遇见最美好的自己</view>
+  <view>
+     <button bindtap="goMainPage" class="btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">去看看</button>
+  </view>
+  </view>
+  <toast id="toast"></toast>
+</view>
+

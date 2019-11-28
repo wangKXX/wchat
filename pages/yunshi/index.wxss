@@ -1,0 +1,169 @@
+/* pages/yunshi/index.wxss */
+/* pages/main/index.wxss */
+page{
+  min-height: 100%;
+}
+
+.main {
+  padding: 15px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* .container{
+  width: 100%;
+} */
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 28rpx;
+}
+
+.icon-wrap {
+  width: 25%;
+  margin-bottom: 56rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 26rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 0 0.1em #fff inset, 0 0 1.2em #fff inset;
+  color: currentColor;
+  display: inline-block;
+  text-decoration: none;
+  /* // animation: idle 4s ease-in-out infinite; */
+}
+
+/* .icon:nth-of-type(1){
+  animation-delay: 0s;
+}
+.icon:nth-of-type(2){
+  animation-delay: -0.5s;
+} */
+
+image {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  padding: 20rpx 15rpx 15rpx 15rpx;
+}
+
+.happy-time {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10rpx;
+  padding: 15rpx;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.happy-time .item {
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-bottom: 3rpx solid #e8e8e8;
+}
+
+.happy-time .item:last-child {
+  border: 0;
+}
+
+.happy-time .item image {
+  width: 100%;
+}
+
+.info {
+  color: #fff;
+  font-size: 25rpx;
+}
+
+@keyframes idle {
+  0%, 100% {
+    transform: translate(-50%, -48%);
+  }
+
+  25% {
+    transform: translate(-52%, -50%);
+  }
+
+  50% {
+    transform: translate(-50%, -52%);
+  }
+
+  75% {
+    transform: translate(-48%, -50%);
+  }
+}
+
+.sentence {
+  font-size: 30rpx;
+  color: #fff;
+  text-transform: uppercase;
+  /* border: 6rpx solid #fff; */
+  border-radius: 15rpx;
+  text-align: center;
+  margin-bottom: 15rpx;
+  padding: 8rpx;
+  display: block;
+  /* mask-image: url(../images/rough-texture.png); *//* transform: rotate(-4deg); */
+  font-family: 'Rajdhani', sans-serif;
+  background: url(http://html5book.ru/wp-content/uploads/2016/08/bubbles.png) repeat #011f42;
+  background-size: 300px auto;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-animation: background 12s infinite linear;
+  animation: background 12s infinite linear;
+}
+
+
+@-webkit-keyframes background {
+  from {
+    background-position: 0 0%;
+  }
+
+  to {
+    background-position: 0 -300px;
+  }
+}
+
+@keyframes background {
+  from {
+    background-position: 0 0%;
+  }
+
+  to {
+    background-position: 0 -300px;
+  }
+}
+.picker{
+  color: #fff;
+  font-size: 30rpx;
+}
+.date{
+  width: 500rpx;
+  height: 60rpx;
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+}
+.picker-input{
+  box-shadow: 0 0 15rpx #fff inset;
+  border-radius: 10rpx;
+  height: 60rpx;
+  box-sizing: border-box;
+  padding: 5rpx;
+}

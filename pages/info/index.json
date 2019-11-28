@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "loading": "/conpoments/loading/loading",
+    "contentLoading": "/conpoments/contentloading/index"
+  }
+}
